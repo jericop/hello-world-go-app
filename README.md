@@ -2,6 +2,33 @@
 
 A simple Go command-line tool that prints "hello world".
 
+## Installation
+
+### Homebrew (macOS)
+
+Install via Homebrew from our custom tap:
+
+```bash
+brew tap jericop/hello-world-go-app
+brew install hello-world
+```
+
+Or install directly:
+
+```bash
+brew install jericop/hello-world-go-app/hello-world
+```
+
+### Download Binaries
+
+Download the latest release for your platform from the [releases page](https://github.com/jericop/hello-world-go-app/releases).
+
+**NOTE** The binaries are not notarized by apple, so you will need to allow them in security settings. 😢
+
+### Build from Source
+
+See the [Building](#building) section below.
+
 ## Project Structure
 
 ```
@@ -87,6 +114,7 @@ To create a release:
    - Create release archives
    - Generate checksums
    - Publish the release to GitHub
+   - Update the Homebrew tap with the new version
 
 The release workflow is defined in [.github/workflows/release.yml](.github/workflows/release.yml).
 
